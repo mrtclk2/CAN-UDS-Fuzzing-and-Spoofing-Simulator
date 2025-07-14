@@ -52,6 +52,6 @@ python3 fuzzer.py
 python3 logger.py
 ```
 
-###📘 Documentation
+### 📘 Documentation
 📖 Usage Guide
 🧪 Example Scenarios
