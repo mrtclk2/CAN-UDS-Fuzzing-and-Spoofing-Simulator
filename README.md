@@ -40,7 +40,7 @@ sudo ip link set up vcan0
 pip install python-can
 ```
 
-###🚀 Quick Start
+### 🚀 Quick Start
 ```bash
 # Terminal 1: Monitor traffic
 python3 sniffer.py
@@ -53,5 +53,6 @@ python3 logger.py
 ```
 
 ### 📘 Documentation
-📖 Usage Guide
-🧪 Example Scenarios
+- [📖 Usage Guide](./Usage.md)
+- [🧪 Example Scenarios](./Example_scenarios.md)
+
