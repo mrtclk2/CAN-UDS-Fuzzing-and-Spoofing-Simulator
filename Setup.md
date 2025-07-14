@@ -8,7 +8,8 @@ To simulate a CAN Bus environment without any physical ECU or vehicle, we will u
 sudo modprobe vcan
 sudo ip link add dev vcan0 type vcan
 sudo ip link set up vcan0
-🛠 Install Python Dependencies
+
+## 🛠 Install Python Dependencies
 We use the python-can library to send CAN messages from Python.
 
 bash
