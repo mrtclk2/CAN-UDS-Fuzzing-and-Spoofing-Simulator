@@ -6,7 +6,7 @@ It includes fuzzing attack vectors, spoofed messages, and protocol behavior anal
 
 ## ⚙️ Setup Instructions
 
-### 1. Enable virtual CAN interface (Linux only):
+## 1. Enable virtual CAN interface (Linux only):
 ```bash
 sudo modprobe vcan
 sudo ip link add dev vcan0 type vcan
