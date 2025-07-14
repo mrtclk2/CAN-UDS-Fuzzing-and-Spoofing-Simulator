@@ -30,3 +30,13 @@ It includes fuzzing attack vectors, spoofed messages, and protocol behavior anal
 for sid in range(0x00, 0xFF):
     payload = [sid] + [random.randint(0x00, 0xFF) for _ in range(7)]
     send_can_message(spoof_id, payload)
+
+
+## How to Run
+sudo modprobe vcan
+sudo ip link add dev vcan0 type vcan
+sudo ip link set up vcan0
+
+pip install python-can
+
+python3 fuzzer.py
