@@ -1,0 +1,35 @@
+⚙️ Setup Instructions
+🚗 Step 1: Simulate a Vehicle CAN Bus Using vcan0
+We use a virtual CAN interface (vcan0) to simulate vehicle communication without hardware.
+This enables safe testing of spoofed and fuzzed messages.
+
+bash
+Kopyala
+Düzenle
+sudo modprobe vcan
+sudo ip link add dev vcan0 type vcan
+sudo ip link set up vcan0
+🛠 Step 2: Install Python Dependencies
+bash
+Kopyala
+Düzenle
+pip install python-can
+▶ Step 3: Run the Fuzzer
+bash
+Kopyala
+Düzenle
+python3 fuzzer.py
+📁 Project Structure
+bash
+Kopyala
+Düzenle
+CAN-UDS-Fuzzing-and-Spoofing-Simulator
+├── fuzzer.py
+├── README.md
+└── logs/              # (optional - for storing sent messages and responses)
+🖼 Example Output
+bash
+Kopyala
+Düzenle
+[+] Sent: ID=0x7E0 Data=[0x10, 0x01, 0xFF, 0x3A, 0x22, 0x00, 0x00, 0xEF]
+[+] Sent: ID=0x7E0 Data=[0x2E, 0xF1, 0x90, 0x12, 0x34, 0x56, 0x78, 0x9A]
