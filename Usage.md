@@ -1,11 +1,11 @@
-# 📘 Usage Guide – CAN-UDS Fuzzing & Spoofing Simulator
+# Usage Guide – CAN-UDS Fuzzing & Spoofing Simulator
 
 This guide will walk you through the setup and usage of all core scripts in this project.  
 It is designed for educational use in automotive cybersecurity and protocol fuzzing scenarios.
 
 ---
 
-### 🔧 1. Environment Setup (vcan0)
+### 1. Environment Setup (vcan0)
 
 To simulate a vehicle CAN bus without hardware, use Linux’s virtual CAN interface.
 
@@ -15,16 +15,16 @@ sudo ip link add dev vcan0 type vcan
 sudo ip link set up vcan0
 You should now have a virtual CAN interface named vcan0.
 ```
-### 📦 2. Install Python Dependencies
+### 2. Install Python Dependencies
 Ensure Python 3.x is installed, then install required libraries:
 
 ```bash
 pip install python-can
 ```
 
-### 🚀 3. How to Use Each Script
+### 3. How to Use Each Script
 
-# ▶ fuzzer.py
+# fuzzer.py
 Randomly sends spoofed UDS messages over CAN.
 
 ```bash
@@ -48,7 +48,7 @@ Example output:
 [RX] ID=0x7E0 DLC=8 Data=10 01 FF 3A 22 00 00 EF
 ```
 
-# 📁 logger.py
+# logger.py
 Logs all CAN messages into a timestamped CSV file at logs/can_log.csv.
 
 ```bash
@@ -56,7 +56,7 @@ python3 logger.py
 ```
 This creates a structured log of ID, DLC, and Data.
 
-# 🧠 response_parser.py
+# response_parser.py
 A helper module to interpret UDS responses.
 
 ```bash
@@ -67,7 +67,7 @@ result = parse_response(data)
 print(result)  # NEGATIVE_RESPONSE to SID 0x10 → NRC 0x13
 ```
 
-# 🧪 scenarios/scenario1_bruteforce_sid.py
+# scenarios/scenario1_bruteforce_sid.py
 Brute-force all possible UDS Service IDs with randomized payloads.
 
 ```bash
@@ -75,7 +75,7 @@ python3 scenarios/scenario1_bruteforce_sid.py
 ```
 Helps discover undocumented services or trigger ECU behaviors.
 
-### 🔄 4. Suggested Workflow
+### 4. Suggested Workflow
 Open Terminal 1:
 ```bash
 python3 sniffer.py
