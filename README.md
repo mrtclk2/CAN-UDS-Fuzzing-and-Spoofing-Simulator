@@ -1,4 +1,4 @@
-### 🚗 CAN UDS Fuzzing & Spoofing Simulator
+###  CAN UDS Fuzzing & Spoofing Simulator
 
 A Python-based toolset for simulating CAN Bus and UDS protocol security testing.  
 Includes fuzzing, spoofing, sniffing, logging, and response analysis in a virtual CAN environment.  
@@ -6,18 +6,18 @@ Ideal for red team simulation, educational labs, and automotive cybersecurity le
 
 ---
 
-## 🎯 Features
+## Features
 
-- 🔧 Virtual CAN Bus simulation (`vcan0`)
-- 🧪 UDS Service ID fuzzing
-- 🚨 CAN message spoofing
-- 📡 Real-time sniffing & CSV logging
-- 🧠 Response code interpretation (NRC parser)
-- 🧬 Scenario-based testing structure
+-  Virtual CAN Bus simulation (`vcan0`)
+-  UDS Service ID fuzzing
+-  CAN message spoofing
+-  Real-time sniffing & CSV logging
+-  Response code interpretation (NRC parser)
+-  Scenario-based testing structure
 
 ---
 
-## 📦 Components
+##  Components
 
 | File / Folder | Description |
 |---------------|-------------|
@@ -31,7 +31,7 @@ Ideal for red team simulation, educational labs, and automotive cybersecurity le
 
 ---
 
-## ⚙️ Quick Setup
+## Quick Setup
 
 ```bash
 sudo modprobe vcan
@@ -40,7 +40,7 @@ sudo ip link set up vcan0
 pip install python-can
 ```
 
-### 🚀 Quick Start
+### Quick Start
 ```bash
 # Terminal 1: Monitor traffic
 python3 sniffer.py
