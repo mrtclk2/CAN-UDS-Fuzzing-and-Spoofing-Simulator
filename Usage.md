@@ -36,7 +36,7 @@ You’ll see outputs like:
 [+] Sent: ID=0x7E0 Data=[0x10, 0x01, 0xFF, 0x3A, 0x22, 0x00, 0x00, 0xEF]
 ```
 
-# 📡 sniffer.py
+# sniffer.py
 Listens to the CAN bus and prints all received messages.
 
 ```bash
