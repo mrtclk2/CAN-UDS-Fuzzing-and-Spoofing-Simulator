@@ -1,5 +1,5 @@
 
-# 🧪 Example Scenarios
+# Example Scenarios
 
 ## Scenario 1 – Brute Force SID
 
